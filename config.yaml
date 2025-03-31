@@ -1,0 +1,29 @@
+
+# General experiment settings
+num_clients: 100
+clients_per_round: 10
+num_rounds: 30
+n_iterations: 3
+val_split: 0.2
+seed: 42
+
+# Datasets to evaluate
+datasets:
+  - mnist
+  - cifar10
+
+# Partitioning strategies to compare
+partitions:
+  - iid
+  - linear
+  - exponential
+  - dirichlet
+
+# Model settings
+model: cnn
+batch_size: 32
+local_epochs: 2
+learning_rate: 0.001
+
+# Result output
+result_path: "results_global.pkl"
