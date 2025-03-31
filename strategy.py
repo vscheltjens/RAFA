@@ -277,7 +277,6 @@ class RAFA(Strategy):
 
         loss = self.performance_loss(current_performance, prev_performance)
 
-        # Compute the gradients (simplified for illustration)
         grad_alpha = 2 * (current_performance.get("historical_contribution", 0) - prev_performance.get("historical_contribution", 0))
         grad_beta = 2 * (current_performance.get("significance_update", 0) - prev_performance.get("significance_update", 0))
         grad_gamma = 2 * (current_performance.get("informativeness_update", 0) - prev_performance.get("informativeness_update", 0))
