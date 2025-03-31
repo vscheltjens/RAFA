@@ -1,20 +1,15 @@
-# Standard library
 from collections import OrderedDict
 from typing import Dict
 
-# Third-party libraries
 import matplotlib.pyplot as plt
 import torch
 
-# Flower core
 import flwr as fl
 from flwr.common import (
     NDArrays,
     Scalar,
 )
 
-
-# Internal modules
 from models import MNet, CNet
 from experiments import get_train_test_functions
 
